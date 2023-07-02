@@ -18,13 +18,9 @@
 const departmentInfo = prompt(`Over welke afdeling wil je meer informatie? Kies uit: [marketing / sales / customer-service]`);
 switch (departmentInfo) {
     case "marketing":
-        // console.log("Je koos " + [departmentInfo] + ". " + departments.marketing.description);
-        break;
     case "sales":
-        // console.log("Je koos " + [departmentInfo] + ". " + departments.sales.description);
-        break;
     case "customer-service":
-        // console.log("Je koos " + [departmentInfo] + ". " + departments["customer-service"].description);
+        // console.log("Je koos " + [departmentInfo] + ". " + departments[departmentInfo].description);
         break;
     default:
         // console.error("This is not a valid department! Refresh your page and try again.");
@@ -67,25 +63,10 @@ const functionInfo = prompt(`Je koos ${departmentInfo}. Over welke functie wil j
 
 switch (functionInfo) {
     case "0":
-        // console.log("Je koos " + departments[departmentInfo].jobs[0].title + ". Een uitdagende rol! " + departments[departmentInfo].jobs[0].description);
-        document.getElementById("role-title").textContent = departments[departmentInfo].jobs[functionInfo].title;
-        document.getElementById("department-description").textContent = departments[departmentInfo].description;
-        document.getElementById("role-description").textContent = departments[departmentInfo].jobs[functionInfo].description;
-        break;
     case "1":
-        // console.log("Je koos " + departments[departmentInfo].jobs[1].title + ". Een uitdagende rol! " + departments[departmentInfo].jobs[1].description);
-        document.getElementById("role-title").textContent = departments[departmentInfo].jobs[functionInfo].title;
-        document.getElementById("department-description").textContent = departments[departmentInfo].description;
-        document.getElementById("role-description").textContent = departments[departmentInfo].jobs[functionInfo].description;
-        break;
     case "2":
-        // console.log("Je koos " + departments[departmentInfo].jobs[2].title + ". Een uitdagende rol! " + departments[departmentInfo].jobs[2].description);
-        document.getElementById("role-title").textContent = departments[departmentInfo].jobs[functionInfo].title;
-        document.getElementById("department-description").textContent = departments[departmentInfo].description;
-        document.getElementById("role-description").textContent = departments[departmentInfo].jobs[functionInfo].description;
-        break;
     case "3":
-        // console.log("Je koos " + departments[departmentInfo].jobs[3].title + ". Een uitdagende rol! " + departments[departmentInfo].jobs[3].description);
+        // console.log("Je koos " + departments[departmentInfo].jobs[functionInfo].title + ". Een uitdagende rol! " + departments[departmentInfo].jobs[functionInfo].description);
         document.getElementById("role-title").textContent = departments[departmentInfo].jobs[functionInfo].title;
         document.getElementById("department-description").textContent = departments[departmentInfo].description;
         document.getElementById("role-description").textContent = departments[departmentInfo].jobs[functionInfo].description;
